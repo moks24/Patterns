@@ -1,3 +1,3 @@
-![example workflow](https://github.com/moks24/github/workflows/gradle.yml/badge.svg)
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
 
