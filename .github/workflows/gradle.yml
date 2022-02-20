@@ -13,6 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
 
     steps:
     - uses: actions/checkout@v2
@@ -21,7 +22,9 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: Run jar
+      run: ./artifacts/appDB-card-delivery.jar 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew test
+      run: ./gradlew test -Dselenide.headless=true --inf
