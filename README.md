@@ -1,2 +1,3 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/xk2smryn30flmeq9?svg=true)](https://ci.appveyor.com/project/moks22/patterns)
+![example workflow](https://github.com/moks24/github/workflows/gradle.yml/badge.svg)
+
 
