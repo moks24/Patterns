@@ -1,2 +1,2 @@
-[![Java CI with Gradle](https://github.com/moks24/Patterns/actions/workflows/gradle.yml/badge.svg)](https://github.com/moks24/Patterns/actions/workflows/gradle.yml)
+[![Build status](https://ci.appveyor.com/api/projects/status/4ktbi3odahrron1h?svg=true)](https://ci.appveyor.com/project/moks24/patterns)
 
