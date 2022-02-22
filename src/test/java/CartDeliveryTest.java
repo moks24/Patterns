@@ -1,6 +1,10 @@
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.logevents.SelenideLogger;
 import com.github.javafaker.Faker;
+import io.qameta.allure.selenide.AllureSelenide;
 import options.RegistrationInfo;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -17,6 +21,15 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class CartDeliveryTest {
+
+    @BeforeAll
+    static void setUpAll() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+    }
+    @AfterAll
+    static void tearDownAll() {
+        SelenideLogger.removeListener("allure");
+    }
 
     @Test
     public void shouldFillInTheForm(){
